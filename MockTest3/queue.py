@@ -21,7 +21,7 @@ class Queue:
 
 	def dequeue(self):
 		if self.isEmpty():
-			raise Exception("Popping from an empty stack")
+			raise Exception("Dequeue from an empty queue")
 		remove = self.head[0]
 		self.head.pop(0)
 		self.size -= 1
